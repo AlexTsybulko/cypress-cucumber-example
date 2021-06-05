@@ -1,7 +1,7 @@
 import { Given } from "cypress-cucumber-preprocessor/steps";
 
-const url = "https://facebook.com";
+const url = "http://localhost:8080/retina/#/";
 
-Given(`I open Facebook page`, () => {
+Given(`I open Retina page`, () => {
   cy.visit(url);
 });

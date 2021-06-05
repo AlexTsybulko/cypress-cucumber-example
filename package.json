@@ -4,7 +4,7 @@
   "description": "Example of cypress with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec \"**/*.feature\"",
+    "test": "cypress run --browser chrome --spec \"**/Facebook.feature\"",
     "test:all": "cypress run --spec \"**/*.features\""
   },
   "repository": {
@@ -28,5 +28,8 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.2"
   }
 }
